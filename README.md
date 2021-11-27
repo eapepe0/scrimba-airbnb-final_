@@ -3,12 +3,12 @@
 
 Aprendi:
 
-¬Crear componentes
-¬Usar Props
-¬Usar JS adentro de JSX
-¬Destructurar props
+- Crear componentes
+- Usar Props
+- Usar JS adentro de JSX
+- Destructurar props
 
-####################################
+```js
 
 const person = {
     img: "./images/mr-whiskerson.png",
@@ -19,15 +19,14 @@ const person = {
 
 const {img, name} = person
 
-#####################################
+```
 
+- Pasar props que no son strings => array de objetos , booleanos
+- .map => usar map para pasar una array de objetos como props en un componente
 
-¬Pasar props que no son strings => array de objetos , booleanos
-¬.map => usar map para pasar una array de objetos como props en un componente
+- Mapear componentes
 
-¬Mapear componentes
-
-########################################
+```js
 
  const jokeElements = jokesData.map(joke => {
         return <Joke setup={joke.setup} punchline={joke.punchline} />
@@ -38,12 +37,12 @@ const {img, name} = person
         </div>
     )
     
-################################################
+```
 
 
-¬Exportar datos de un archivo y usar esos datos como props para los componentes
+- Exportar datos de un archivo y usar esos datos como props para los componentes
 
-¬Hacer un render depende de una funcion de JS por ejemplo, si los datos nos dicen que un articulo esta agotado, mostrar un cartel en la pagina que diga agotado
+- Hacer un render depende de una funcion de JS por ejemplo, si los datos nos dicen que un articulo esta agotado, mostrar un cartel en la pagina que diga agotado
 
 
 
